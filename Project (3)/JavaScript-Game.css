@@ -1,0 +1,223 @@
+/*Adding a new font*/
+@font-face {
+  font-family: "Pacman";
+  src: url("./Fonts/PacfontGood-yYye.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("Images/Background 2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html {
+  overflow: hidden;
+}
+/*PacMan*/
+#character {
+  width: 80px;
+  height: 80px;
+  background-image: url("Images/Pac\ Man.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 250px;
+  left: 50px;
+}
+/*Blue ghost*/
+#Blue {
+  background-image: url("Images/Ghost\ Blue.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 200px;
+  left: 500px;
+  animation: block 3s infinite linear;
+}
+@keyframes block {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -40px;
+  }
+}
+@keyframes jump {
+  0% {
+    top: 250px;
+  }
+  10% {
+    top: 235px;
+  }
+  20% {
+    top: 225px;
+  }
+  30% {
+    top: 215px;
+  }
+  40% {
+    top: 205px;
+  }
+  50% {
+    top: 195px;
+  }
+  60% {
+    top: 205px;
+  }
+  70% {
+    top: 215px;
+  }
+  80% {
+    top: 225px;
+  }
+  90% {
+    top: 235px;
+  }
+  100% {
+    top: 245px;
+  }
+}
+.animate {
+  animation: jump 0.7s linear;
+}
+.Score {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  animation-name: color;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+.score {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: "Pacman";
+  font-size: 50px;
+  animation-name: color;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+@keyframes color {
+  0% {
+    background-image: linear-gradient(to right, white 75%, #fd98c4 25%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  5% {
+    background-image: linear-gradient(to right, white 50%, #fd98c4 50%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  10% {
+    background-image: linear-gradient(to right, white 25%, #fd98c4 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  15% {
+    background-image: linear-gradient(to right, white 0%, #fd98c4 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  20% {
+    background-image: linear-gradient(to right, #fd98c4 75%, #fe8c07 25%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  25% {
+    background-image: linear-gradient(to right, #fd98c4 50%, #fe8c07 50%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  30% {
+    background-image: linear-gradient(to right, #fd98c4 25, #fe8c07 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  35% {
+    background-image: linear-gradient(to right, #fd98c4 0%, #fe8c07 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  40% {
+    background-image: linear-gradient(to right, #fe8c07 75%, #fd98c4 25%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  45% {
+    background-image: linear-gradient(to right, #fe8c07 50%, #fd98c4 50%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  50% {
+    background-image: linear-gradient(to right, #fe8c07 25%, #fd98c4 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  55% {
+    background-image: linear-gradient(to right, #fe8c07 0%, #fd98c4 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  60% {
+    background-image: linear-gradient(to right, #fd98c4 100%, #e60201 0%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  65% {
+    background-image: linear-gradient(to right, #fd98c4 75%, #e60201 25%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  70% {
+    background-image: linear-gradient(to right, #fd98c4 50%, #e60201 50%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  75% {
+    background-image: linear-gradient(to right, #fd98c4 25%, #e60201 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  80% {
+    background-image: linear-gradient(to right, #fd98c4 0%, #e60201 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  85% {
+    background-image: linear-gradient(to right, #e60201 100%, white 0%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  90% {
+    background-image: linear-gradient(to right, #e60201 75%, white 25%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  95% {
+    background-image: linear-gradient(to right, #e60201 50%, white 50%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  100% {
+    background-image: linear-gradient(to right, #e60201 25%, white 75%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+.logo {
+  width: 25%;
+  height: 15%;
+  margin-left: 37%;
+}
+h1 {
+  font-family: "Pacman";
+  text-align: center;
+  color: yellow;
+}

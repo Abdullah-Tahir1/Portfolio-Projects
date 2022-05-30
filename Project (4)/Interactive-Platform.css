@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Lofi";
+  src: url("./Fonts/Fontspring-DEMO-loficopy-regular.otf");
+}
+body {
+  margin: 0;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  overflow-y: hidden;
+}
+header {
+  width: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(249, 252, 186, 1) 0%,
+    rgba(242, 248, 227, 1) 50%,
+    rgba(239, 246, 245, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  font-family: "Lofi";
+  font-size: 75px;
+  text-decoration: underline #764ba2;
+}
+.night {
+  height: 80vh;
+  width: 75%;
+  margin: auto;
+  background: url("./Images/Background.png");
+  background-size: cover;
+  position: relative;
+  box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
+}
+.surface {
+  height: 140px;
+  width: 500%;
+  background: url("./Images/Road.png");
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-repeat: repeat-x;
+}
+.car {
+  position: absolute;
+  bottom: 7.4%;
+  left: 24%;
+}
+@keyframes Driving {
+  100% {
+    transform: translateX(-2950px);
+  }
+}
+@keyframes Suspension {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+.moveRight {
+  animation: Driving 6s linear infinite;
+}
+.suspension {
+  animation: Suspension 1s linear infinite;
+}
+footer {
+  background: rgb(84, 34, 110);
+  background: radial-gradient(
+    circle,
+    rgba(84, 34, 110, 1) 0%,
+    rgba(87, 47, 147, 1) 50%,
+    rgba(46, 36, 58, 1) 100%
+  );
+  margin-bottom: 5%;
+}
+p {
+  color: rgba(249, 252, 186, 1);
+  padding-bottom: 3%;
+  margin-left: 25%;
+}
